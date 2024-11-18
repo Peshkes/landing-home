@@ -17,7 +17,7 @@ const Tabs = () => {
                 {tabs.map(({ id, title }) => (
                     <button
                         key={id}
-                        className={`relative px-10 py-6 text-center rounded-t-3xl w-fit ml-[-20px] first-of-type:ml-0 border-b-0 ${
+                        className={`relative text-sm md:text-lg px-5 py-3 md:px-10 md:py-6 text-center rounded-t-3xl w-fit ml-[-20px] first-of-type:ml-0 border-b-0 ${
                             activeTab === id
                                 ? 'text-white bg-black border-2 border-black z-10'
                                 : 'text-black bg-white border-2 border-black'
@@ -28,9 +28,9 @@ const Tabs = () => {
                     </button>
                 ))}
             </div>
-            <div className="p-10 bg-black text-white flex-1 rounded-b-3xl rounded-tr-3xl">
+            <div className="p-5 md:p-10 text-sm md:text-lg bg-black text-white flex-1 rounded-b-3xl rounded-tr-3xl">
                 {tabs.map(({ id, body }) => (
-                    <div key={id} className={activeTab === id ? 'block' : 'hidden'}>
+                    <div key={id} className={activeTab === id ? 'block min-h-52' : 'hidden'}>
                         {body}
                     </div>
                 ))}

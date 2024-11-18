@@ -9,25 +9,25 @@
 
 html {
     scroll-behavior: smooth;
-    @apply scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-200
+    @apply scrollbar-thin scrollbar-thumb-black scrollbar-track-gray-200
 }
 
 body {
     color: var(--foreground);
     background: var(--background);
-    @apply uppercase
+    @apply uppercase box-border
 }
 
 section {
-    @apply p-6 border-2 border-black rounded-3xl py-28
+    @apply box-border py-10 px-4 md:py-28 md:p-6 border-2 border-black rounded-3xl
 }
 
 section:first-of-type {
-    @apply mt-4
+    @apply mt-2 md:mt-4
 }
 
 section:last-of-type {
-    @apply mb-4
+    @apply mb-2 md:mb-4
 }
 
 .button {
