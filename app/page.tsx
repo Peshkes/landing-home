@@ -1,7 +1,10 @@
 import Header from "@/components/header/Header";
-import Banner from "@/components/banner/Banner";
-import AboutUs from "@/components/about-us/AboutUs";
+import Banner from "@/components/Banner";
+import Features from "@/components/Features";
 import ScrollingLine from "@/components/ScrollingLine";
+import Prices from "@/components/pricing/Prices";
+import Footer from "@/components/Footer";
+import About from "@/components/About";
 
 export default function Home() {
     return (
@@ -9,7 +12,11 @@ export default function Home() {
             <Header/>
             <Banner/>
             <ScrollingLine/>
-            <AboutUs/>
+            <Features/>
+            <Prices/>
+            <About/>
+            <ScrollingLine/>
+            <Footer/>
         </div>
     );
 }

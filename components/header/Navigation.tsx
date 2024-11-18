@@ -5,10 +5,9 @@ import MenuLink from "@/components/header/MenuLink";
 
 const sections = [
     {id: 'main', title: 'Главная'},
-    {id: 'about', title: 'О нас'},
     {id: 'features', title: 'Особенности'},
     {id: 'pricing', title: 'Цены'},
-    {id: 'faq', title: 'FAQ'},
+    {id: 'about', title: 'О нас'},
 ];
 
 const Navigation = () => {
@@ -23,7 +22,7 @@ const Navigation = () => {
                     }
                 });
             },
-            {threshold: 0.5}
+            {threshold: 0.8}
         );
 
         sections.forEach(({id}) => {
@@ -36,7 +35,7 @@ const Navigation = () => {
 
 
     return (
-        <nav className={'flex border-2 rounded-full border-black px-6'}>
+        <nav className={'flex border-2 rounded-full border-black px-6 bg-white'}>
             {sections.map(({id, title}) => (
                 <MenuLink id={id} isActive={activeSection === id} key={id}>
                     {title}

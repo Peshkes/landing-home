@@ -9,6 +9,7 @@
 
 html {
     scroll-behavior: smooth;
+    @apply scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-200
 }
 
 body {
@@ -18,11 +19,15 @@ body {
 }
 
 section {
-    @apply p-6 border-4 border-black rounded-3xl
+    @apply p-6 border-2 border-black rounded-3xl py-28
 }
 
 section:first-of-type {
-    @apply border-t-0 border-x-0
+    @apply mt-4
+}
+
+section:last-of-type {
+    @apply mb-4
 }
 
 .button {
@@ -35,6 +40,10 @@ section:first-of-type {
 
 .white-button {
     @apply bg-white text-black
+}
+
+.green-text{
+    @apply text-green-700 font-bold
 }
 
 .scrolling-text-animation {
@@ -72,3 +81,4 @@ section:first-of-type {
         opacity: 1;
     }
 }
+

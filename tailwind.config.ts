@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import tailwind_scrollbar from "tailwind-scrollbar";
 
 export default {
   content: [
@@ -17,5 +18,5 @@ export default {
       sans: ["Geist", "sans-serif"],
     },
   },
-  plugins: [],
+  plugins: [tailwind_scrollbar],
 } satisfies Config;
