@@ -17,7 +17,7 @@ const Navigation = () => {
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 768);
+            setIsMobile(window.innerWidth <= 775);
         };
 
         handleResize();
@@ -58,7 +58,7 @@ const Navigation = () => {
     };
 
     return (
-        <nav className="relative flex items-center justify-center border-2 rounded-full border-black px-6 bg-black md:bg-white">
+        <nav className="relative flex items-center justify-center border-2 rounded-full border-black px-6 md:px-2 lg:px-6 bg-black md:bg-white">
             {isMobile ? (
                 <div className="w-full">
                     <div className="flex justify-between items-center text-white">
